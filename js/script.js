@@ -24,7 +24,7 @@ $(document).ready(function(){
     event.preventDefault();
     var randomNumberA=Math.floor(Math.random() * 6) + 1;
     if(randomNumberA===1){
-      alert("Burnt!!");
+      alert("Hahaaaa...You have burnt!!!!");
       $("button#buttonA").prop('disabled',true);
       $("button#buttonB").prop('disabled',false);
       //playerOne=0;
@@ -41,7 +41,7 @@ $(document).ready(function(){
     event.preventDefault();
     var randomNumberB=Math.floor(Math.random() * 6) + 1;
     if(randomNumberB===1){
-      alert("Burnt!!");
+      alert("Hahaaaa...You have burnt!!");
       $("button#buttonB").prop('disabled',true);
       $("button#buttonA").prop('disabled',false);
       //playerTwo=0;
@@ -66,3 +66,6 @@ $("h4#playerTwo").text(playerTwo);
   var newPlayerB=new playerB(playerTwo);
   var PlayerTwo=0;
 */
+if($("button#holdA").prop('disabled', true)){
+  $("button#buttonA").prop('disabled',false);
+}
