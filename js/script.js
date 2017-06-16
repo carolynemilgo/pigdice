@@ -14,21 +14,55 @@ playerB.prototype.scoreB=function(){
 }
 //playerA
 $(document).ready(function(){
+  //var scorePlayerA=[];
+  var newPlayerA=new playerA(playerOne);
+  var playerOne=0;
+  var newPlayerB=new playerB(playerTwo);
+  var playerTwo=0;
+  //var totalForA=scoreplayerA.reduce(function (a, playerOne){return a + playerOne;},0);
   $("form#playerA").submit(function(event){
     event.preventDefault();
-    var playerOne=Math.floor(Math.random() * 6) + 1;
-    var newPlayerA=new playerA(playerOne);
-    //console.log(newPlayerA);
-  $("p#playerOne").append("<span class='resultA'>" + newPlayerA.scoreA() + "</span></p>");
+    var randomNumberA=Math.floor(Math.random() * 6) + 1;
+    if(randomNumberA===1){
+      alert("Burnt!!");
+      $("button#buttonA").prop('disabled',true);
+      $("button#buttonB").prop('disabled',false);
+      //playerOne=0;
+    }
+    else{
+        playerOne+=randomNumberA;
+      }
+    //  console.log(playerOne);
+      $("h4#playerOne").text(playerOne);
+      //$("#playerOne").text(newPlayerA.scoreA());
+    //  $("h4#playerOne").text("<span class='resultA'>" + playerOne() + "</span>");
+  });
+  $("form#playerB").submit(function(event){
+    event.preventDefault();
+    var randomNumberB=Math.floor(Math.random() * 6) + 1;
+    if(randomNumberB===1){
+      alert("Burnt!!");
+      $("button#buttonB").prop('disabled',true);
+      $("button#buttonA").prop('disabled',false);
+      //playerTwo=0;
+    }
+    else{
+      playerTwo+=randomNumberB;
+    }
+
+//     if($("button#buttonA").prop('disabled',true)){
+//       $("button#buttonB").prop('disabled',false);
+//     }
+//     else ($("button#buttonB").prop('disabled',true)){
+//       $("button#buttonA").prop('disabled',false);
+// }
+$("h4#playerTwo").text(playerTwo);
+    console.log(playerTwo);
+    //$("#playerTwo").text(newPlayerB.scoreB());
   });
 });
 //playerB
-$(document).ready(function(){
-  $("form#playerB").submit(function(event){
-    event.preventDefault();
-    var playerTwo=Math.floor(Math.random() * 6) + 1;
-    var newPlayerB=new playerB(playerTwo);
-    //console.log(newPlayerB);
-    $("p#playerTwo").append("<span class='resultB'>" + newPlayerB.scoreB() + "</span></p>");
-  });
-});
+/*
+  var newPlayerB=new playerB(playerTwo);
+  var PlayerTwo=0;
+*/

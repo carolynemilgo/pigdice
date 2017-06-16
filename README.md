@@ -3,7 +3,7 @@
 Carolyne Milgo
 # Description
 The game allows two users to play against each other by rolling DICE
-#Specifications
+# Specifications
 1. The first player rolls the dice and it returns a number between 1 and 6.
 Input: 1
 Output: The next player should roll the dice
@@ -21,3 +21,5 @@ input: 1
 Output: new count is 0
 # Developed using
 The game of pig dice is developed using HTML, CSS and Javascript
+# Link
+The game is accesible on github through this link
