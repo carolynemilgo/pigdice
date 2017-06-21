@@ -3,4 +3,8 @@ body{
   background-image: url("../images/2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Pangolin', cursive;
+}
+.player{
+  font-weight: bold;
 }
