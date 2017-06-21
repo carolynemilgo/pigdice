@@ -40,8 +40,8 @@ $(document).ready(function() {
     } else {
       playerOne += randomNumberA;
     }
-    //winner and score set to 20
-    if (playerOne >= 20) {
+    //winner and score set to 100
+    if (playerOne >= 100) {
       alert("You are the winner Player1");
     }
     $("h4#playerOne").text(playerOne);
@@ -62,8 +62,8 @@ $(document).ready(function() {
     } else {
       playerTwo += randomNumberB;
     }
-      //winner and score set to 20
-    if (playerTwo >= 20) {
+      //winner and score set to 100
+    if (playerTwo >= 100) {
       alert("You are the winner Player2");
     }
     $("h4#playerTwo").text(playerTwo);

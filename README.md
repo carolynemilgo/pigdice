@@ -20,7 +20,7 @@ acquired and the counter resets to one
 input: 1
 Output: new count is 0
 5. The players can hold the game at any point using the hold button and their points remain the same as they increment when they resume their turn to roll the dice.
-6. The high score of 50 is set to define the winner of the game and in the event that the cumulative score for one of the players is equal to or greater than 50, that winner is declared the winner.
+6. The high score of 100 is set to define the winner of the game and in the event that the cumulative score for one of the players is equal to or greater than 100, that winner is declared the winner.
 input: score>=50
 Output: You are the winner
 ## Developed using
